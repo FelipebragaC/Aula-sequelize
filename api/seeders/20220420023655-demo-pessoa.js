@@ -14,7 +14,7 @@ module.exports = {
        {
         Nome: 'Felipe Braga',
         Ativo: true,
-        Email:'felipeteste@hotmail.com',
+        Email:'felipeteste1@hotmail.com',
         Role:'estudante',
         createdAt:new Date(),
         updatedAt:new Date()
