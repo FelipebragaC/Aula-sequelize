@@ -1,10 +1,10 @@
 const express = require ("express");
-const bodyparse = ("body-parser");
-
+const bodyParser = require ("body-parser");
+const rotas = require ('./view/rotas.js')
 
 const app = express();
-
-app.use(bodyparse.json());
+rotas(app);
+app.use(bodyParser.json());
 
 const port = process.env.port||4000;
 
@@ -14,4 +14,4 @@ app.listen(port, ()=> console.log(`servidor escutando na porta ${port}`));
 
 //app.get('/teste', )
 
-
+module.exports = app
