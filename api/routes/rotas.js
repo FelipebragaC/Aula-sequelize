@@ -1,4 +1,5 @@
-const express =require ("express");
+const express =require ('express');
+const bodyParser = require('body-parser');
 const rotapessoa = require ('./pessoaRoutes.js');
 
 
@@ -11,7 +12,7 @@ const rotas = (app) => {
         })
 
         app.use(
-            express.json(),
+            bodyParser.json(),
             rotapessoa
             
         );
